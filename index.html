@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind_assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-center h-scrren " >
+    <header>
+        
+            <nav class="flex justify-start justify-center justify-between px-3 h-12 items-center bg-lime-500 text-white ">
+
+                <p>Call Us Now: 1234567890</p>
+                <div>
+                    <ul class="flex justify-end space-x-3">
+                    <li><i class="fa-brands fa-facebook-f fa-lg"></i></li>
+                    <li><i class="fa-brands fa-twitter fa-lg"></i></li>
+                    <li><i class="fa-brands fa-pinterest-p fa-lg"></i></li>
+                    <li><i class="fa-brands fa-instagram fa-lg"></i></li>
+                </ul>
+        </div>
+
+</nav>
+</header>
+
+<main>
+<section>
+    <div class="mt-7 ">
+
+    <div class="flex justify-center ">
+         <img src="./images/logo.webp" alt="Energico" class="h-12 w-auto" >
+
+         <div id="hamburger" class="md:hidden">
+            <i class="fa-solid fa-bars fa-xl mt-9 ms-16 text-yellow-500" ></i>
+         </div>
+        
+
+    </div>
+    <!-- menu items hidden on mobile -->
+    
+        <div class=" hidden  md:flex space-x-8 justify-center">
+            <ul class="flex py-8 space-x-16 text-lg font-semibold md:items-center text-yellow-500 ">
+                <li class=" hover:underline decoration-yellow-400"><a class="active" href="index.html">Home</a></li>
+                <li class=" hover:underline decoration-yellow-400"><a href= "about.html">About</a></li>
+                <li class=" hover:underline decoration-yellow-400"><a href="contact.html">Contact US</a></li>
+               
+            </ul>
+
+        </div>
+       
+</div>
+</section>
+<!-- mobile menu -->
+<div  id = mobileMenu class=" hidden  md:hidden flex space-x-8 justify-center">
+    <ul class="flex py-8 space-x-16 text-lg font-semibold md:items-center ">
+        <li class=" hover:underline decoration-yellow-400"><a class="active" href="index.html">Home</a></li>
+        <li class=" hover:underline decoration-yellow-400"><a href= "about.html">About</a></li>
+        <li class=" hover:underline decoration-yellow-400"><a href="contact.html">Contact US</a></li>
+       
+    </ul>
+
+</div>
+
+
+
+<!-- carousel images -->
+<section >
+    
+<div class="slider">
+    <div class="images flex  overflow-hidden max-h-full lg:max-h-screen">
+       
+        <input type="radio" name="slide" id="img1">
+        <input type="radio" name="slide" id="img2">
+        <input type="radio" name="slide" id="img3">
+        <img src="./images/img1.jpg" class="m1 w-full h-full object-cover" alt="img1">
+        <img src="./images/img2.jpg" class="m2 w-full h-full object-cover" alt="img2">
+        <img src="./images/img3.jpg" class="m3 w-full h-full object-cover" alt="img3">
+         <div class="absolute inset-0 flex h-full flex-col items-center justify-center text-white text-center px-3 sm:px-2 md:px-5">
+            <h1 class="text-3xl  sm:text-4xl md:text-5xl lg:text-6xl text-center font-bold"><span>Garden Care</span><br> <span>is our true</span> <br>passion!</h1>
+            <p class="mt-4 text-sm sm:text-base md:text-lg lg:text-xl text-center"><span>SO WHENEVER YOU JUST FEEL YOU NEED</span><br><span>PROFESSIONAL HELPING HAND AT</span><br>  YOUR GARDENING, CALL US UP!</p>
+            <button class="mt-4 px-4 sm:px-4 py-2 sm:py-3 bg-white rounded-full text-black text-sm sm:text-base md:text-lg">Find out more</button>
+        </div>
+        
+        
+    </div>
+
+    <div class="dots">
+        <label for="img1"></label>
+        <label for="img2"></label>
+        <label for="img3"></label>
+
+    </div>
+    
+</div>
+
+
+</section>
+
+
+<section>
+    <div class="flex flex-col bg-yellow-300 lg:flex-row md:flex-row">
+
+        <div class="bg-cover flex justify-center p-12  " style="background-image: url(./images/img7.jpg);">
+            <img src="./images/img4.png" alt=" " class="absolute h-24">
+            <p class=" font-sans text-3xl sm:text-4xl lg:text-6xl mx-4  mt-24 py-6 ">Best practices</p>
+        </div>
+
+        <div class="bg-cover flex justify-center p-12" style="background-image: url(./images/img8.jpg);">
+            <img src="./images/img5.png" alt="" class="absolute h-24" >
+            <p class=" font-sans text-4xl lg:text-6xl mx-4 mt-24 py-6">First Pace</p>
+        </div>
+        <div class="bg-cover flex justify-center p-12">
+            <img src="./images/img6.png" alt="" class="absolute h-24" >
+            <p class="font-sans text-4xl lg:text-6xl mx-4 mt-24 py-6">Range of Services</p>
+        </div>
+      </div>
+</section>
+
+<div class=" flex flex-col sm:flex-row :flex-row lg:flex-row">
+    <div class="overflow-hidden  "><img src="./images/img10.jpg" class="hover:scale-125 duration-1000"></div>
+    
+    <div class="mx-4 my-4 px-2 py-3 font-sans">
+        <h1 class="font-bold text-3xl">Why Energico?</h1>
+        <h3 class="font-semibold py-4 text-grey-100">RANGE OF SERVICE WELCOME TO THE TOP RATED EXTERIOR DESIGN COMPANY</h3>
+        <p class="text-lg">After years of practical (both personal and work-related) experience at hand, our team of passionate gardeners is your only option!</p> 
+        <button type="button" class=" bg-yellow-500 text-white rounded-full mt-4 p-4">Find out more</button>
+    </div>
+</div>
+
+
+<div class="bg-cover mt-3 h-48" style="background-image: url(./images/img11.jpg);">
+    
+
+    <div class=" w-full top-0 left-0  text-left mt-6 px-4 ">
+    <h1 class="text-yellow-500 font-bold text-3xl p-1 md:text-4xl lg:text-5xl ">CREATE</h1>
+    <h1 class="text-white font-bold text-2xl md:text-3xl lg:text-4xl md:mx-2">THE PERFECT GARDEN!</h1>
+    <button type="button" class="text-white rounded-full bg-lime-500 my-2 md:my-2 md:mx-2 p-3">FIND OUT MORE</button>
+    </div>
+    
+</div>
+
+
+
+<div class="flex px-12 py-4 md:relative overflow inline-block justify-between items-center text-nowrap overflow-hidden">
+    <div> 
+        <h1 class="mx-4 font-sans font-bold text-3xl md:text-4xl ">Perform to the <br><span>Highest Standards</span></h1>
+        <p class="mx-4 pt-2 text-align-left md:text-2xl"> With all kinds of garden<br> design/care, lawn & <br>plants in our range,<br> we’re your natural <br>choice!</p>
+        <button class=" mx-4 text-xs p-2 mt-3 rounded-full bg-white-100 border-2 border-current">GET A QUOTE</button>
+    </div>
+    <div>
+        <img src="./images/imag11.png" class="h-auto right-20 top-10 max-w-full md:absolute hover:scale-125 duration-1000 ">
+    </div>
+</div>
+
+
+<section class="h-auto">
+<div class="text-center mt-20 bg-slate-300 bg-cover pb-4">
+    <h1 class="font-bold text-3xl pt-12">Our Advantages</h1>
+    <!-- grid -->
+    <div class="grid  mt-4 md:grid-cols-3">
+        <!-- gridcol-1 -->
+        <div class="text-center mx-4 my-2">
+            <div class="flex justify-center my-4"> <img src="./images/img13.png" alt=""></div>
+           
+            <div>
+                <h class="text-lime-600 font-bold text-lg">CREATIVE IDEAS</h1>
+            </div>
+            
+            <p class="text-black"> Serving everyone from <br>household owners to hotels and<br> office, we make sure to provide a<br> truly full-cycle range of exterior<br> design, landscaping, and exterior<br> remodeling services</p>
+        </div>
+        <!-- gridcol-2 -->
+
+        <div  class="text-center mx-4 my-2">
+            <div class="flex justify-center my-4"> <img src="./images/img15.png"></div>
+            
+            <div>
+                <h class="text-lime-600 font-bold text-lg">DECORATING</h1>
+            </div>
+            <p> It does not really matter is it the<br> Christmas time of the year or<br> not, priming your house with<br> some decorative elements or<br> masonry should not and is not<br> a seasonal fad!</p>
+        </div>
+        <!-- gridcol-3 -->
+         
+        <div  class="text-center mx-4 my-2">
+            <div class="flex justify-center my-4"> <img src="./images/img17.png"></div>
+            
+            <div>
+                <h class="text-lime-600 font-bold text-lg">GARDEN DESIGN</h1>
+            </div>
+            <p>  Did you ever consider giving <br> your house exterior or your<br> landscape a unique look,<br> implementing some superb<br> design ideas you’ve seen<br> before in the magazines?</p>
+        </div>
+        <!-- gridcol-4 -->
+        
+        <div  class="text-center mx-4 my-2">
+            <div class="flex justify-center my-4"> <img src="./images/img14.png"></div>
+            
+            <div>
+                <h class="text-lime-600 font-bold text-lg">EXPERT ADVICE</h1>
+            </div>
+            <p>  Regardless of how crazy your <br> exterior idea is, our team of<br> design-and-build experts will<br> easily turn it into reality! This is<br> true for projects of any scale!</p>
+        </div>
+
+
+    <!-- gridcol-5 -->
+        
+    <div  class="text-center mx-4 my-2">
+        <div class="flex justify-center my-4"> <img src="./images/img16.png"></div>
+    
+        <div>
+        <h class="text-lime-600 font-bold text-lg">FRIENDLY PRICES</h1>
+        </div>
+        <p>  Having so much to offer, we<br> also would love to give you the <br> best pricing on all of our <br> services! This means that as<br> compared to our market rivals,<br> our pricing is indeed fair and<br> friendly! </p>
+    </div>
+
+    <!-- gridcol-6 -->
+        
+    <div  class="text-center mx-4 my-2">
+        <div class="flex justify-center my-4"> <img src="./images/img18.png"></div>
+        
+        <div>
+            <h class="text-lime-600 font-bold text-lg">SOFTSCAPES</h1>
+        </div>
+        <p>  Softscaping is the total <br> opposite for the hardscaping <br> in that it is neither as long-<br> lasting as the hard structure, <br> nor it is made of materials <br> that are durable.</p>
+    </div>
+
+    </div>
+</div>
+</section>
+
+ <!-- last main section -->
+<section class="h-auto">
+ <div class=" text-center mx-4 mt-8 ">
+    
+        <h1 class="font-sans font-bold text-3xl md:text-4xl">See the Tips & Tricks for Gardeners on Our Blog!</h1>
+    
+    <!-- grid card-->
+     <div class="grid  md:grid-cols-2 m-10 flex gap-12 ">
+        <div class="py-2 max-w-full">
+            <img src="./images/img21.jpg">
+            <h1 class=" py-4 text-left font-sans font-semibold text-2xl md:text-3xl text-slate-500"> THE LESS CHEMICALS YOU USE, THE BETTER!</h1>
+            <p class="text-left text-lg text-slate-700">So, we guess that if you're reading this blog entry 
+            now, you are an avid gardener yourself, right? 
+            Which in turn means that as we're talking about 
+            the ways to compost your garden, the more you 
+            should be listening.</p>
+        </div>
+        <div class="py-2 max-w-full">
+            <img src="./images/img20.jpg">
+            <h1 class="py-4 text-left font-sans font-semibold text-2xl md:text-3xl text-slate-500"> THE LESS CHEMICALS YOU USE, THE BETTER</h1>
+            <p  class="text-left text-lg text-slate-700">  So, we guess that if you're reading this blog entry 
+                now, you are an avid gardener yourself, right? 
+                Which in turn means that as we're talking about 
+                the ways to compost your garden, the more you 
+                should be listening</p>
+        </div>
+     </div>
+    
+    
+    
+ </div>
+</section>
+
+
+ </main>
+ <!-- footer -->
+ <footer class="mt-4">
+    <div class="bg-black ">
+        <div class="flex justify-center mt-4 py-4"><img src="./images/footer-logo.png"></div>
+       
+        <div>
+            <ul class="flex justify-center mt-3 px-8 gap-4">
+
+                
+                <li><i class="fa-brands fa-facebook-f text-white fa-lg"></i></li>
+                    <li><i class="fa-brands fa-twitter text-white fa-lg"></i></li>
+                    <li><i class="fa-brands fa-pinterest-p text-white fa-lg"></i></li>
+                    <li><i class="fa-brands fa-instagram text-white fa-lg"></i></li>
+            </ul>
+        </div>
+        <div>
+            <p class="text-white text-center p-4">Energico @ 2022. Privacy Policy</p>
+        </div>
+
+    </div>
+ </footer>
+    
+    
+    
+
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+    
+        hamburger.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
+    
+</body>
+</html>

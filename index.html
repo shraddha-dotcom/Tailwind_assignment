@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body class="bg-center h-scrren " >
+<body class="bg-cover h-screen bg-center" >
     <header>
         
             <nav class="flex justify-start justify-center justify-between px-3 h-12 items-center bg-lime-500 text-white ">
@@ -16,10 +16,15 @@
                 <p>Call Us Now: 1234567890</p>
                 <div>
                     <ul class="flex justify-end space-x-3">
-                    <li><i class="fa-brands fa-facebook-f fa-lg"></i></li>
-                    <li><i class="fa-brands fa-twitter fa-lg"></i></li>
-                    <li><i class="fa-brands fa-pinterest-p fa-lg"></i></li>
-                    <li><i class="fa-brands fa-instagram fa-lg"></i></li>
+                        
+                <a href="https://www.facebook.com/AlmaBetterOfficial" target="_blank" >
+                    <li><i class="fa-brands fa-facebook-f fa-md"></i></li></a>
+                    <a href="https://x.com/almabetter?lang=en" target="_blank" >   
+                    <li><i class="fa-brands fa-twitter fa-md"></i></li></a>
+                    <a href="https://in.pinterest.com/" target="_blank" >
+                    <li><i class="fa-brands fa-pinterest-p fa-md"></i></li></a>
+                    <a href="https://www.instagram.com/almabetter/p/C0tnl1eIttr/?img_index=1" target="_blank" >
+                    <li><i class="fa-brands fa-instagram fa-md"></i></li></a>
                 </ul>
         </div>
 
@@ -67,27 +72,27 @@
 
 
 <!-- carousel images -->
-<section >
+<section class="min-w-full h-auto bg-cover bg-center" >
     
 <div class="slider">
-    <div class="images flex  overflow-hidden max-h-full lg:max-h-screen">
+    <div class="images relative  overflow-hidden  md:max-h-screen ">
        
         <input type="radio" name="slide" id="img1">
         <input type="radio" name="slide" id="img2">
         <input type="radio" name="slide" id="img3">
-        <img src="./images/img1.jpg" class="m1 w-full h-full object-cover" alt="img1">
-        <img src="./images/img2.jpg" class="m2 w-full h-full object-cover" alt="img2">
-        <img src="./images/img3.jpg" class="m3 w-full h-full object-cover" alt="img3">
-         <div class="absolute inset-0 flex h-full flex-col items-center justify-center text-white text-center px-3 sm:px-2 md:px-5">
-            <h1 class="text-3xl  sm:text-4xl md:text-5xl lg:text-6xl text-center font-bold"><span>Garden Care</span><br> <span>is our true</span> <br>passion!</h1>
-            <p class="mt-4 text-sm sm:text-base md:text-lg lg:text-xl text-center"><span>SO WHENEVER YOU JUST FEEL YOU NEED</span><br><span>PROFESSIONAL HELPING HAND AT</span><br>  YOUR GARDENING, CALL US UP!</p>
-            <button class="mt-4 px-4 sm:px-4 py-2 sm:py-3 bg-white rounded-full text-black text-sm sm:text-base md:text-lg">Find out more</button>
+        <img src="./images/img1.jpg" class="m1" alt="img1">
+        <img src="./images/img2.jpg" class="m2" alt="img2">
+        <img src="./images/img3.jpg" class="m3" alt="img3">
+         <div class="absolute inset-0 flex h-full flex-col items-center justify-center text-white text-center px-2 md:px-5">
+            <h1 class=" pt-4 text-4xl md:text-3xl lg:text-6xl text-center font-bold"><span>Garden Care</span><br> <span>is our true</span> <br>passion!</h1>
+            <p class="mt-4 text-xl md:text-2xl text-center"><span>SO WHENEVER YOU JUST FEEL YOU NEED</span><br><span>PROFESSIONAL HELPING HAND AT</span><br>  YOUR GARDENING, CALL US UP!</p>
+            <button class="mt-4 px-4 md:my-8 py-2  bg-white rounded-full text-black text-sm sm:text-base md:text-lg hover:bg-slate-300">Find out more</button>
         </div>
         
         
     </div>
 
-    <div class="dots">
+    <div class="dots relative">
         <label for="img1"></label>
         <label for="img2"></label>
         <label for="img3"></label>
@@ -101,34 +106,36 @@
 
 
 <section>
-    <div class="flex flex-col bg-yellow-300 lg:flex-row md:flex-row">
+    <div class="flex flex-col bg-yellow-300 md:flex-row justify-evenly">
 
-        <div class="bg-cover flex justify-center p-12  " style="background-image: url(./images/img7.jpg);">
+        <div class="bg-cover flex justify-center p-12 md:w-1/3" style="background-image: url(./images/img7.jpg);">
             <img src="./images/img4.png" alt=" " class="absolute h-24">
-            <p class=" font-sans text-3xl sm:text-4xl lg:text-6xl mx-4  mt-24 py-6 ">Best practices</p>
+            <p class=" font-sans text-lg  md:text-2xl mx-4  mt-24 py-6 ">Best practices</p>
         </div>
 
-        <div class="bg-cover flex justify-center p-12" style="background-image: url(./images/img8.jpg);">
+        <div class="bg-cover flex justify-center p-12 md:w-1/3" style="background-image: url(./images/img8.jpg);">
             <img src="./images/img5.png" alt="" class="absolute h-24" >
-            <p class=" font-sans text-4xl lg:text-6xl mx-4 mt-24 py-6">First Pace</p>
+            <p class=" font-sans text-lg md:text-2xl mx-4 mt-24 py-6 text-white">First Pace</p>
         </div>
-        <div class="bg-cover flex justify-center p-12">
+        <div class="bg-cover flex justify-center p-12 md:w-1/3">
             <img src="./images/img6.png" alt="" class="absolute h-24" >
-            <p class="font-sans text-4xl lg:text-6xl mx-4 mt-24 py-6">Range of Services</p>
+            <p class="font-sans text-lg md:text-2xl mx-4 mt-24 py-6 text-white">Range of Services</p>
         </div>
       </div>
 </section>
-
-<div class=" flex flex-col sm:flex-row :flex-row lg:flex-row">
+<section>
+    <div class=" flex flex-col sm:flex-row :flex-row lg:flex-row">
     <div class="overflow-hidden  "><img src="./images/img10.jpg" class="hover:scale-125 duration-1000"></div>
     
     <div class="mx-4 my-4 px-2 py-3 font-sans">
         <h1 class="font-bold text-3xl">Why Energico?</h1>
         <h3 class="font-semibold py-4 text-grey-100">RANGE OF SERVICE WELCOME TO THE TOP RATED EXTERIOR DESIGN COMPANY</h3>
         <p class="text-lg">After years of practical (both personal and work-related) experience at hand, our team of passionate gardeners is your only option!</p> 
-        <button type="button" class=" bg-yellow-500 text-white rounded-full mt-4 p-4">Find out more</button>
+        <button type="button" class=" bg-yellow-500 text-white rounded-full mt-4 p-4 hover:bg-yellow-300">Find out more</button>
     </div>
 </div>
+</section>
+
 
 
 <div class="bg-cover mt-3 h-48" style="background-image: url(./images/img11.jpg);">
@@ -137,7 +144,7 @@
     <div class=" w-full top-0 left-0  text-left mt-6 px-4 ">
     <h1 class="text-yellow-500 font-bold text-3xl p-1 md:text-4xl lg:text-5xl ">CREATE</h1>
     <h1 class="text-white font-bold text-2xl md:text-3xl lg:text-4xl md:mx-2">THE PERFECT GARDEN!</h1>
-    <button type="button" class="text-white rounded-full bg-lime-500 my-2 md:my-2 md:mx-2 p-3">FIND OUT MORE</button>
+    <button type="button" class="text-white rounded-full bg-lime-500 my-2 md:my-2 md:mx-2 p-3 hover:bg-lime-600">FIND OUT MORE</button>
     </div>
     
 </div>
@@ -148,7 +155,7 @@
     <div> 
         <h1 class="mx-4 font-sans font-bold text-3xl md:text-4xl ">Perform to the <br><span>Highest Standards</span></h1>
         <p class="mx-4 pt-2 text-align-left md:text-2xl"> With all kinds of garden<br> design/care, lawn & <br>plants in our range,<br> we’re your natural <br>choice!</p>
-        <button class=" mx-4 text-xs p-2 mt-3 rounded-full bg-white-100 border-2 border-current">GET A QUOTE</button>
+        <button class=" mx-4 text-xs p-2 mt-3 rounded-full bg-white-100 border-2 border-current hover:bg-slate-300">GET A QUOTE</button>
     </div>
     <div>
         <img src="./images/imag11.png" class="h-auto right-20 top-10 max-w-full md:absolute hover:scale-125 duration-1000 ">
